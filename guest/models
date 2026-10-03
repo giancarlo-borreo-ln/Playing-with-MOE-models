@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /opt/llm/run_model.sh list "$@"

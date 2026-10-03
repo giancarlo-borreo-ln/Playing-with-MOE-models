@@ -1,0 +1,14 @@
+[Unit]
+Description=Provision LLM VM (build llama.cpp, download models)
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=!/var/lib/vm-setup/ready
+
+[Service]
+Type=oneshot
+ExecStart=/opt/llm/guest-setup.sh
+RemainAfterExit=yes
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

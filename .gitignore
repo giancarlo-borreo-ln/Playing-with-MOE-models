@@ -1,0 +1,12 @@
+# VM state and disk images (multi-GB, machine-specific)
+.vm/
+
+# Build artifacts
+agent/agent
+*.o
+*.qcow2
+*.img
+
+# Model weights
+models/
+*.gguf

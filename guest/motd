@@ -1,0 +1,16 @@
+
+  LLM VM  -  Debian 12 + llama.cpp (CPU inference)
+  ===============================================
+
+  models                 list models and whether they are downloaded
+  run                    same as 'models'
+  run <alias>            chat, e.g.  run deepseek-8b
+  run <alias> -p "..."   one-shot prompt (any llama-cli flag passes through)
+  serve <alias>          OpenAI-compatible API + web UI on http://localhost:8080
+  doctor                 show CPU / memory / llama.cpp info
+  bench                  benchmark all downloaded models
+
+  aliases: deepseek-8b  deepseek-14b  qwen-14b  llama-8b  mistral-7b  gemma-9b  phi-mini
+
+  This VM runs models on CPU. For the RTX 3060 use ./gpu-run.sh on the HOST.
+
